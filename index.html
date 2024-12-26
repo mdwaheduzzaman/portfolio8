@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Todo Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Todo CSS File -->
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Protfolio</title>
+  </head>
+  <body>
+    <!-- * Header Start -->
+    <header class="header d-flex align-items-center position-fixed w-100">
+      <div class="container">
+        <div
+          class="header-content d-flex align-items-center justify-content-between"
+        >
+          <a href="#home" class="logo order-lg-0 order-1">
+            <img src="image/LOGO.png" alt="LOGO" />
+          </a>
+          <div class="navigation order-lg-1 order-0">
+            <input type="checkbox" id="toggle" class="d-none" />
+            <label
+              for="toggle"
+              class="toggle d-flex d-lg-none flex-column justify-content-between"
+            >
+              <span class="bars bar-1 d-block rounded-3"></span>
+              <span class="bars bar-2 d-block rounded-3"></span>
+              <span class="bars bar-3 d-block rounded-3"></span>
+            </label>
+            <ul
+              class="nav d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="d-block text-decoration-none fw-bold active text-capitalize"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="d-block text-decoration-none fw-bold text-capitalize"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="d-block text-decoration-none fw-bold"
+                  >About me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="d-block text-decoration-none fw-bold text-capitalize"
+                  >portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="d-block text-decoration-none fw-bold"
+                  >Contact me</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="new-btn order-2 d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold"
+          >
+            hire me
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- * Header End -->
+    <!-- * Hero Start -->
+    <section class="hero pt-lg-0 d-flex align-items-center" id="home">
+      <div class="container">
+        <div
+          class="hero-content d-flex justify-content-between align-items-end flex-column flex-lg-row gap-5"
+        >
+          <div
+            class="info w-100 h-100 position-relative d-flex flex-column align-items-center align-items-lg-start gap-4 user-select-none"
+          >
+            <h5 class="name">
+              Hi I am <span class="d-block">Mahmoud Fazile</span>
+            </h5>
+            <h1 class="job fw-bold">UI/UX designer</h1>
+            <ul
+              class="social-media list-unstyled d-flex align-items-center gap-4"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="rgba(186,186,186,1)"
+                  >
+                    <path
+                      d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="rgba(186,186,186,1)"
+                  >
+                    <path
+                      d="M4.00098 3H20.001C20.5533 3 21.001 3.44772 21.001 4V20C21.001 20.5523 20.5533 21 20.001 21H4.00098C3.44869 21 3.00098 20.5523 3.00098 20V4C3.00098 3.44772 3.44869 3 4.00098 3ZM5.00098 5V19H19.001V5H5.00098ZM7.50098 9C6.67255 9 6.00098 8.32843 6.00098 7.5C6.00098 6.67157 6.67255 6 7.50098 6C8.3294 6 9.00098 6.67157 9.00098 7.5C9.00098 8.32843 8.3294 9 7.50098 9ZM6.50098 10H8.50098V17.5H6.50098V10ZM12.001 10.4295C12.5854 9.86534 13.2665 9.5 14.001 9.5C16.072 9.5 17.501 11.1789 17.501 13.25V17.5H15.501V13.25C15.501 12.2835 14.7175 11.5 13.751 11.5C12.7845 11.5 12.001 12.2835 12.001 13.25V17.5H10.001V10H12.001V10.4295Z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="rgba(186,186,186,1)"
+                  >
+                    <path
+                      d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="rgba(186,186,186,1)"
+                  >
+                    <path
+                      d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+            <div class="btns d-flex align-items-center gap-4">
+              <button
+                class="new-btn d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold"
+              >
+                hire me
+              </button>
+              <button
+                class="new-btn d-flex justify-content-center align-items-center shadow-none border-0 fw-bold"
+              >
+                Download CV
+              </button>
+            </div>
+            <div
+              class="unit-section d-flex justify-content-around align-items-center p-1 w-100"
+            >
+              <div class="unit d-flex flex-column ps-3 gap-2 w-100">
+                <span class="num">5+</span>
+                <span class="title">Experience</span>
+              </div>
+              <div class="unit d-flex flex-column ps-3 gap-2 w-100">
+                <span class="num">20+</span>
+                <span class="title">Project done</span>
+              </div>
+              <div class="unit d-flex flex-column ps-3 gap-2 w-100">
+                <span class="num">80+</span>
+                <span class="title">Happy Clients</span>
+              </div>
+            </div>
+            <div class="blob position-absolute w-100 h-100">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#fd6f00"
+                  d="M44,-52.4C52.2,-45.6,50.7,-27.1,53.2,-9.8C55.7,7.5,62.3,23.6,58.9,38C55.4,52.4,41.8,65.1,28,64.8C14.3,64.5,0.2,51.2,-15.6,44.7C-31.4,38.1,-49,38.3,-55.3,30.4C-61.6,22.6,-56.7,6.7,-53.9,-9.6C-51.1,-25.9,-50.5,-42.6,-41.8,-49.3C-33.2,-56,-16.6,-52.6,0.7,-53.4C17.9,-54.2,35.8,-59.1,44,-52.4Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="image w-100 h-100 d-flex justify-content-center align-items-center mt-5 mt-lg-0 position-relative"
+          >
+            <div class="person position-relative rounded-circle">
+              <span
+                class="circle-shadow rounded-circle position-absolute w-100 h-100"
+              ></span>
+              <div class="image-1 position-absolute w-100 h-100 rounded-circle">
+                <img
+                  src="image/Character.png"
+                  alt="Character"
+                  class="w-100 position-absolute"
+                />
+              </div>
+              <div class="image-2 position-absolute w-100 h-100 rounded-circle">
+                <img
+                  src="image/Character.png"
+                  alt="Character"
+                  class="w-100 position-absolute"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * Hero End -->
+    <!-- * Services Start -->
+    <section class="services py-5" id="services">
+      <div class="container">
+        <div class="title-header text-center">
+          <h2 class="title text-capitalize">services</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit At pariatur.
+          </p>
+        </div>
+        <div
+          class="services-content pt-3 row flex-wrap justify-content-center g-4"
+        >
+          <div class="col">
+            <div
+              class="card d-flex justify-content-center flex-column align-items-center gap-2"
+            >
+              <img
+                src="image/users-icon.png"
+                alt="users-icon"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column gap-2 text-center">
+                <h5 class="card-title text-capitalize fw-bold">app design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam aliquid deleniti reprehenderit ullam sit quos ipsum
+                  velit corrupti earum dicta!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card d-flex justify-content-center flex-column align-items-center gap-2"
+            >
+              <img
+                src="image/users-icon.png"
+                alt="users-icon"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column gap-2 text-center">
+                <h5 class="card-title text-capitalize fw-bold">app design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam aliquid deleniti reprehenderit ullam sit quos ipsum
+                  velit corrupti earum dicta!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card d-flex justify-content-center flex-column align-items-center gap-2"
+            >
+              <img
+                src="image/users-icon.png"
+                alt="users-icon"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column gap-2 text-center">
+                <h5 class="card-title text-capitalize fw-bold">app design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam aliquid deleniti reprehenderit ullam sit quos ipsum
+                  velit corrupti earum dicta!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card d-flex justify-content-center flex-column align-items-center gap-2"
+            >
+              <img
+                src="image/users-icon.png"
+                alt="users-icon"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column gap-2 text-center">
+                <h5 class="card-title text-capitalize fw-bold">app design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam aliquid deleniti reprehenderit ullam sit quos ipsum
+                  velit corrupti earum dicta!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card d-flex justify-content-center flex-column align-items-center gap-2"
+            >
+              <img
+                src="image/users-icon.png"
+                alt="users-icon"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column gap-2 text-center">
+                <h5 class="card-title text-capitalize fw-bold">app design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam aliquid deleniti reprehenderit ullam sit quos ipsum
+                  velit corrupti earum dicta!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card d-flex justify-content-center flex-column align-items-center gap-2"
+            >
+              <img
+                src="image/users-icon.png"
+                alt="users-icon"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column gap-2 text-center">
+                <h5 class="card-title text-capitalize fw-bold">app design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam aliquid deleniti reprehenderit ullam sit quos ipsum
+                  velit corrupti earum dicta!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * Services End -->
+    <!-- * About Start -->
+    <section class="about py-5" id="about">
+      <div class="container">
+        <div class="title-header text-center">
+          <h2 class="title text-capitalize">about me</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit At pariatur.
+          </p>
+        </div>
+        <div class="about-content mt-5 pt-5">
+          <div
+            class="info d-flex align-items-center justify-content-center gap-4 flex-column flex-lg-row"
+          >
+            <div
+              class="image w-100 h-100 d-flex justify-content-center align-items-center mt-5 mt-lg-0 position-relative"
+            >
+              <div class="person position-relative rounded-circle">
+                <span
+                  class="circle-shadow rounded-circle position-absolute w-100 h-100"
+                ></span>
+                <div
+                  class="image-1 position-absolute w-100 h-100 rounded-circle"
+                >
+                  <img
+                    src="image/Character.png"
+                    alt="Character"
+                    class="w-100 position-absolute"
+                  />
+                </div>
+                <div
+                  class="image-2 position-absolute w-100 h-100 rounded-circle"
+                >
+                  <img
+                    src="image/Character.png"
+                    alt="Character"
+                    class="w-100 position-absolute"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="info-desc w-100">
+              <p class="desc mb-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Maxime, nam corrupti nemo suscipit magnam atque, temporibus
+                ullam consequatur doloribus commodi hic earum facilis culpa aut,
+                odio ipsam distinctio. Veniam, odit.
+              </p>
+              <button
+                class="new-btn d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold gap-2 mx-auto ms-lg-0"
+              >
+                <img src="image/download-icon.svg" alt="download-icon" />
+                <span class="txt">Donwload CV</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="skill-progress d-flex flex-wrap justify-content-around align-items-center gap-5 mt-5 pt-5"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- * About End -->
+    <!-- * Portfolio Start -->
+    <section class="portfolio py-5" id="portfolio">
+      <div class="container">
+        <div class="title-header text-center">
+          <h2 class="title text-capitalize">portfolio</h2>
+        </div>
+        <div class="portfolio-content">
+          <ul
+            class="filtering-btns d-flex flex-wrap justify-content-center align-items-center gap-3 py-3 list-unstyled"
+          >
+            <li
+              class="new-btn justify-content-around align-items-center d-flex text-capitalize active"
+              data-filter="all"
+            >
+              all
+            </li>
+            <li
+              class="new-btn justify-content-around align-items-center d-flex text-capitalize"
+              data-filter="website"
+            >
+              website design
+            </li>
+            <li
+              class="new-btn justify-content-around align-items-center d-flex text-capitalize"
+              data-filter="app-mobile"
+            >
+              app mobile
+            </li>
+            <li
+              class="new-btn justify-content-around align-items-center d-flex text-capitalize"
+              data-filter="app-desktop"
+            >
+              app desktop
+            </li>
+            <li
+              class="new-btn justify-content-around align-items-center d-flex text-capitalize"
+              data-filter="branding"
+            >
+              branding
+            </li>
+          </ul>
+          <div
+            class="portfolio-card d-flex flex-wrap justify-content-center align-items-center gap-5"
+          >
+            <div class="card rounded-3 border-0" data-filter="webiste">
+              <img
+                src="image/porftolio-1.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">webiste</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="app-desktop">
+              <img
+                src="image/porftolio-2.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">app desktop</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="app-mobile">
+              <img
+                src="image/porftolio-3.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">app mobile</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="website">
+              <img
+                src="image/porftolio-2.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">website</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="branding">
+              <img
+                src="image/porftolio-1.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">branding</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="app-mobile">
+              <img
+                src="image/porftolio-3.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">app mobile</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="app-desktop">
+              <img
+                src="image/porftolio-3.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">app desktop</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="branding">
+              <img
+                src="image/porftolio-1.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">branding</small>
+              </div>
+            </div>
+            <div class="card rounded-3 border-0" data-filter="webiste">
+              <img
+                src="image/porftolio-3.png"
+                alt="portfolio-1"
+                class="card-img-top"
+              />
+              <div
+                class="card-footer d-flex justify-content-between align-items-center text-capitalize"
+              >
+                <small class="text-muted fw-bold">last update</small>
+                <small class="text-muted fw-bold">webiste</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * Portfolio End -->
+    <!-- * Contact Start -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="title-header text-center">
+          <h2 class="title text-capitalize">contact me</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit At pariatur.
+          </p>
+        </div>
+        <div
+          class="contact-form d-flex flex-wrap justify-content-center gap-4 pt-5"
+        >
+          <div class="input overflow-hidden">
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              class="w-100 border-0 ps-3 py-2 text-capitalize"
+            />
+          </div>
+          <div class="input overflow-hidden">
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              class="w-100 border-0 ps-3 py-2 text-capitalize"
+            />
+          </div>
+          <div class="input overflow-hidden">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="phone number"
+              class="w-100 border-0 ps-3 py-2 text-capitalize"
+            />
+          </div>
+          <div class="input select-services position-relative">
+            <div
+              class="select-value d-flex align-items-center ps-3 text-capitalize"
+            >
+              <span class="txt">service of interest</span>
+              <span
+                class="arrow d-flex justify-content-center align-items-center position-absolute"
+              >
+                <img src="image/arrow.svg" alt="arrow" />
+              </span>
+            </div>
+            <ul
+              class="options d-flex flex-column ps-0 w-100 overflow-auto position-absolute text-capitalize"
+            >
+              <li class="py-2 ps-3" data-value="option-1">option-1</li>
+              <li class="py-2 ps-3" data-value="option-2">option-2</li>
+              <li class="py-2 ps-3" data-value="option-3">option-3</li>
+              <li class="py-2 ps-3" data-value="option-4">option-4</li>
+              <li class="py-2 ps-3" data-value="option-5">option-5</li>
+              <li class="py-2 ps-3" data-value="option-6">option-6</li>
+              <li class="py-2 ps-3" data-value="option-7">option-7</li>
+              <li class="py-2 ps-3" data-value="option-8">option-8</li>
+              <li class="py-2 ps-3" data-value="option-9">option-9</li>
+              <li class="py-2 ps-3" data-value="option-10">option-10</li>
+              <li class="py-2 ps-3" data-value="option-11">option-11</li>
+              <li class="py-2 ps-3" data-value="option-12">option-12</li>
+            </ul>
+          </div>
+          <div class="input overflow-hidden">
+            <input
+              type="text"
+              name="timeline"
+              placeholder="timeline"
+              class="w-100 border-0 ps-3 py-2 text-capitalize"
+            />
+          </div>
+          <div class="input overflow-hidden">
+            <textarea
+              name="project dtailes"
+              rows="7"
+              placeholder="project dtailes"
+              class="w-100 border-0 ps-3 py-2 text-capitalize"
+            ></textarea>
+          </div>
+          <div
+            class="input overflow-hidden d-flex justify-content-lg-end justify-content-center"
+          >
+            <input
+              type="submit"
+              class="new-btn border-0 ps-3 py-2 text-capitalize fw-bold"
+              value="send"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * Contact End -->
+    <!-- * Footer Start -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="footer-content d-flex flex-column gap-4 align-items-center">
+          <a href="#home" class="logo order-lg-0 order-1">
+            <img src="image/LOGO.png" alt="LOGO" />
+          </a>
+          <ul
+            class="nav d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5"
+          >
+            <li>
+              <a
+                href="#home"
+                class="d-block text-decoration-none fw-bold active text-capitalize"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="d-block text-decoration-none fw-bold text-capitalize"
+                >services</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="d-block text-decoration-none fw-bold"
+                >About me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="d-block text-decoration-none fw-bold text-capitalize"
+                >portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="d-block text-decoration-none fw-bold"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="social-media list-unstyled d-flex align-items-center gap-4"
+          >
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(186,186,186,1)"
+                >
+                  <path
+                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(186,186,186,1)"
+                >
+                  <path
+                    d="M4.00098 3H20.001C20.5533 3 21.001 3.44772 21.001 4V20C21.001 20.5523 20.5533 21 20.001 21H4.00098C3.44869 21 3.00098 20.5523 3.00098 20V4C3.00098 3.44772 3.44869 3 4.00098 3ZM5.00098 5V19H19.001V5H5.00098ZM7.50098 9C6.67255 9 6.00098 8.32843 6.00098 7.5C6.00098 6.67157 6.67255 6 7.50098 6C8.3294 6 9.00098 6.67157 9.00098 7.5C9.00098 8.32843 8.3294 9 7.50098 9ZM6.50098 10H8.50098V17.5H6.50098V10ZM12.001 10.4295C12.5854 9.86534 13.2665 9.5 14.001 9.5C16.072 9.5 17.501 11.1789 17.501 13.25V17.5H15.501V13.25C15.501 12.2835 14.7175 11.5 13.751 11.5C12.7845 11.5 12.001 12.2835 12.001 13.25V17.5H10.001V10H12.001V10.4295Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(186,186,186,1)"
+                >
+                  <path
+                    d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(186,186,186,1)"
+                >
+                  <path
+                    d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                  ></path></svg
+              ></a>
+            </li>
+          </ul>
+          <div class="action d-flex gap-4 align-items-center flex-wrap">
+            <a
+              href="mailto:Mahmood.fazile7005@gmail.com"
+              class="d-flex align-items-center gap-2 text-decoration-none fw-bold"
+            >
+              <span class="icon d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(149,149,149,1)"
+                >
+                  <path
+                    d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="txt">portfolio@gmail.com</span>
+            </a>
+            <a
+              href="tel:+93 729 107 005"
+              class="d-flex align-items-center gap-2 text-decoration-none fw-bold"
+            >
+              <span class="icon d-flex align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(149,149,149,1)"
+                >
+                  <path
+                    d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
+                  ></path></svg
+              ></span>
+              <span class="txt">+93 729 107 005</span>
+            </a>
+          </div>
+          <span class="copyright d-block px-4 pt-2 border-top">
+            Designed by @Waheduzzaman Web designer and Devoloper.
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- * Footer End -->
+    <!-- * Arrow Up Start -->
+    <span
+      class="arrow-up d-flex overflow-hidden position-fixed align-items-center rounded-3 justify-content-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        fill="rgba(149,149,149,1)"
+      >
+        <path
+          d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+        ></path>
+      </svg>
+    </span>
+    <!-- * Arrow Up End -->
+    <!-- Todo JS File -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
